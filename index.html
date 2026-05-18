@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple ATM System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🏦 ATM Banking System</h1>
+
+    <!-- Account 1 -->
+    <div class="card">
+      <h2>Account 1</h2>
+
+      <p id="user1"></p>
+
+      <button onclick="deposit.call(account1,500)">
+         deposit 500
+      </button>
+
+      <button onclick="withdraw.call(account1,300)">
+        Withdraw 
+      </button>
+    </div>
+
+    <!-- Account 2 -->
+    <div class="card">
+      <h2>Account 2</h2>
+
+      <p id="user2"></p>
+
+      <button onclick="deposit.apply(account2,[1000])">
+        Deposit 1000
+      </button>
+
+      <button onclick="withdraw.apply(account2,[700])">
+        Withdraw 700
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
